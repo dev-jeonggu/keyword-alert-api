@@ -1,0 +1,31 @@
+# Python 기본
+__pycache__/
+*.py[cod]
+*.log
+
+# 가상환경
+venv/
+.env
+.env.*
+
+# SQLite DB
+*.db
+
+# macOS
+.DS_Store
+
+# VSCode/IDE 설정
+.vscode/
+.idea/
+
+# __pycache__ everywhere
+**/__pycache__/
+
+# pytest, coverage 등 테스트 관련
+.coverage
+htmlcov/
+.tox/
+pytest_cache/
+
+# migrations (알렘빅 등)
+alembic/versions/
