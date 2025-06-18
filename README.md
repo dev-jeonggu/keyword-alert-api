@@ -1,11 +1,14 @@
-# 키워드 알림 구독 API (Keyword Alert API)
-> FastAPI 기반의 키워드 기반 알림 시스템 API입니다.  
-> 사용자는 관심 키워드를 등록하고, 외부에서 전달된 메시지에 키워드가 포함되면 알림을 받을 수 있습니다.
+# Keyword Alert API
+FastAPI 기반의 키워드 기반 알림 시스템 API입니다.  
+사용자는 관심 키워드를 등록하고, 외부에서 전달된 메시지에 키워드가 포함되면 알림을 받을 수 있습니다.
 
----
+## 👩🏻‍💻 Developer
+| jeonggu.kim<br />(김정현) |
+|:---:|
+| <a href="https://github.com/dev-jeonggu"> <img src="https://avatars.githubusercontent.com/dev-jeonggu" width=100px alt="_"/> </a> |
+| <a href="https://github.com/dev-jeonggu">@dev-jeonggu</a> |
 
-## 📌 주요 기능
-
+## 📌 Key Features
 - 사용자 회원가입 / 로그인 (JWT 인증)
 - 관심 키워드 등록
 - 외부 알림 메시지 수신 (Webhook처럼 사용 가능)
@@ -13,10 +16,7 @@
 - 본인의 알림 조회 API 제공
 - Swagger 자동 문서화
 
----
-
-## 🛠 사용 기술
-
+## 🛠 Tech Stack
 | 항목       | 내용                        |
 |------------|-----------------------------|
 | Framework  | FastAPI                     |
@@ -25,9 +25,8 @@
 | Hashing    | passlib[bcrypt]             |
 | Docs       | Swagger (자동 생성)         |
 
----
 
-## ⚙️ 설치 및 실행 방법
+## ⚙️ Installation & Run
 
 ### 1. 클론 및 진입
 
@@ -48,7 +47,7 @@ uvicorn app.main:app --reload
 - 접속: http://localhost:8000
 - 문서: http://localhost:8000/docs
 
-## 프로젝트 구조
+## 📁 Project Structure
 ```
 keyword-alert-api/
 ├── main.py          # FastAPI 엔트리포인트
@@ -59,7 +58,7 @@ keyword-alert-api/
 └── requirements.txt # 패키지 목록
 ```
 
-## API 테스트 시나리오
+## 🧪 API Test Scenarios
 ### 1. 회원가입
 ```
 POST /signup
@@ -99,6 +98,6 @@ GET /alerts
 Authorization: Bearer <token>
 ```
 
-## 참고사항
+## 📌 Notes
 - 단일 사용자용 SQLite 기반 프로젝트
 - Webhook 또는 크롤링 시스템과 연계하면 알림 자동화 가능
